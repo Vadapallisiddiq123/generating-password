@@ -1,0 +1,10 @@
+# generating-password
+import random
+def passwordGenerator():
+    lowerchars = 'dtgyyhtfdewsfgbhjumnybnkiiuhjmki'
+    upperchars = 'HNGBTBFDWSCBNMOPUYTTERDEASXVBNMJHGTTHN'
+    specialchars = '$%$#@@#@!'
+    numericalchars = '51525117893157269'
+    password = random.choice(lowerchars) + random.choice(upperchars) + random.choice(specialchars)+ random.choice(numericalchars)
+    return password
+print(passwordGenerator())
